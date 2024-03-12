@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS product (id SERIAL PRIMARY KEY,
+                                    title VARCHAR(255),
+                                    description TEXT,
+                                    price DOUBLE PRECISION,
+                                    discount_percentage DOUBLE PRECISION,
+                                    rating DOUBLE PRECISION,
+                                    stock INTEGER,
+                                    brand VARCHAR(100),
+                                    category VARCHAR(100),
+                                    thumbnail VARCHAR(255),
+                                    images TEXT[]);
