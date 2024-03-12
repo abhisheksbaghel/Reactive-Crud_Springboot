@@ -18,14 +18,14 @@ public class MyController {
     }
 
     public Mono<String> getGreeting(){
-        return Mono.just("Hello ").delayElement(Duration.ofSeconds(0));
+        return Mono.just("Hello ").delayElement(Duration.ofSeconds(5));
     }
 
     public Mono<String> getName(){
-        return Mono.just("Abhishek ").delayElement(Duration.ofSeconds(0));
+        return Mono.just("Abhishek ").delayElement(Duration.ofSeconds(10));
     }
 
     public Mono<String> getTerminal(){
-        return Mono.just("...! ").delayElement(Duration.ofSeconds(0));
+        return Mono.just("...! ").delayElement(Duration.ofSeconds(15));
     }
 }
