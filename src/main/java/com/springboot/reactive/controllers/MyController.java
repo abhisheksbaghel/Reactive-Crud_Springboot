@@ -26,6 +26,6 @@ public class MyController {
     }
 
     public Mono<String> getTerminal(){
-        return Mono.just("...! ").delayElement(Duration.ofSeconds(15));
+        return Mono.just("...!!! ").delayElement(Duration.ofSeconds(15));
     }
 }
