@@ -40,7 +40,7 @@ public class ProductController {
         return productRepository
                 .save(objectMapper.convertValue(productDto, Product.class));
     }
-    @GetMapping("/get-product-data")
+//    @GetMapping("/get-product-data")
     public Flux<Product> getProductJson(){
         return webClient.get().retrieve()
                 .bodyToFlux(ProductJson.class)
