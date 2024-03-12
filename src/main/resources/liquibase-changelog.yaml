@@ -1,0 +1,39 @@
+databaseChangeLog:
+  -  changeSet:
+       id: yml-1
+       author: liquibase-docs
+       changes:
+         -  createTable:
+              tableName: yaml_table
+              columns:
+                -  column:
+                     name: stringValue
+                     type: varchar(100)
+                - column:
+                    name: numericValue
+                    type: int
+                - column:
+                    name: booleanValue
+                    type: boolean
+                - column:
+                    name: nullExample
+                    type: varchar(100)
+  -  changeSet:
+       id: yml-2
+       author:  liquibase-docs
+       changes:
+         -  insert:
+              tableName:  yaml_table
+              columns:
+                -  column:
+                     name:  stringValue
+                     value:  'Text value'
+                -  column:
+                     name:  numericValue
+                     value:  123
+                -  column:
+                     name:  booleanValue
+                     value:  true
+                -  column:
+                     name:  nullExample
+                     value:  null

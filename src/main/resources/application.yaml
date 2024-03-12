@@ -3,6 +3,11 @@ spring:
     url: r2dbc:postgresql://localhost:5432/test
     username: postgres
     password: password
+  liquibase:
+    url: jdbc:postgresql://localhost:5432/test
+    user: postgres
+    password: password
+    change-log: liquibase-changelog.yaml
 
 logging:
   level:
